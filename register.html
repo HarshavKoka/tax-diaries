@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax diaries</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+
+<body>
+    <div class="icon-container">
+        <img src="bglogo.jpeg" alt="Icon" class="icon">
+        <h2>Tax&nbsp;Diaries</h2><em>Helps&nbsp;you&nbsp;with&nbsp;everything&nbsp;we&nbsp;have</em>
+
+
+    </div>
+
+    <center>
+        <h1>Register page</h1>
+        <form>
+            <label for="Username">Username :</label>
+            <input type="text" id="Username" name="Username" placeholder="Name" required><br>
+
+            <label for="pan">PAN:</label>
+            <input type="pan" id="pan" name="pan" placeholder="enter your pan" aria-required="false" maxlength="10"
+                required pattern="[A-Z]{3}[PLHCO]{1}[A-Z]{1}[0-9]{4}[A-Z]{1}$"
+                title="enter pan card in 'XXXP/L/H/C/OXXXXX' "><br>
+
+
+            <label for="date">Dob:</label>
+            <input type="date" id="date" name="date " placeholder="enter your date of birth" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
+            <div class="phone-input-container">
+                <label for="country_code">Mobile Number:</label>
+                <select id="country_code" name="country_code" required>
+                    <option value="+1">+1 (USA)</option>
+                    <option value="+44">+44 (UK)</option>
+                    <option value="+91">+91 (India)</option>
+                    <!-- Add more country codes as needed -->
+                </select>
+
+
+                <label for="mobile"></label>
+                <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="123-456-7890" required>
+
+            </div>
+
+            <label for="password">Password :</label>
+            <input type="password" id="password" name="password" placeholder="password" pattern=".{6,}" required><br>
+
+            <label for="password">Confirm Password :</label>
+            <input type="password" id="password" name="password" placeholder="password" pattern=".{6,}" required><br>
+
+            <!-- <label for="radio">Gender:
+                <input type="radio" id="male" name="radio">
+                <label for="male">Male </label>
+
+                <input type="radio" id="female" name="radio">
+                <label for="female">Female </label>
+
+                <input type="radio" id="others" name="radio">
+                <label for="others">Others </label>
+            </label><br><br>
+ -->
+
+            <!-- <p>Country: <select></p>
+            <option value="Country">Country</option>
+            <option value="INDIA">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="CANADA">Canada</option>
+            </select><br><br> -->
+
+            <!-- <label>Skills:
+                <input type="checkbox" id="Java" name="Java">
+                <label for="Java">Java:</label>
+
+                <input type="checkbox" id="HTML" name="HTML">
+                <label for="HTML">HTML:</label>
+
+                <input type="checkbox" id="SQL" name="SQL">
+                <label for="SQL">SQL:</label>
+
+                <input type="checkbox" id="SPRING" name="SPRING">
+                <label for="SPRING">SPRING:</label>
+
+                <input type="checkbox" id="TESTING" name="TESTING">
+                <label for="TESTING">TESTING:</label>
+            </label><br><br> -->
+
+            <input type="submit" value="Register"><br>
+
+            <p> Have an account?<a href="login.html">Login</a></p>
+        </form>
+        <!-- </fieldset> -->
+    </center>
+</body>
+
+</html>
